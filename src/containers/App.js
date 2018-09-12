@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import BasicModal from "./components/BasicModal";
-import FixButton from "./components/FixButton";
-import { MyModalContent, ReactHeader } from "./components/Commons";
-import { bodyClickFix } from "./utils";
+import BasicModal from "../components/BasicModal";
+import FixButton from "../components/FixButton";
+import { MyModalContent, ReactHeader } from "../components/Commons";
+import { bodyClickFix } from "../utils";
 
 import "./App.css";
 
