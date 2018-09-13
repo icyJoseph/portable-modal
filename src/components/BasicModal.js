@@ -4,12 +4,6 @@ import Portal from "./Portal";
 export default class BasicModal extends Component {
   state = { open: false };
 
-  componentDidMount() {
-    this.listener = document.body.addEventListener("click", () => {
-      this.closeModal();
-    });
-  }
-
   openModal = () =>
     this.setState({
       open: true
@@ -19,10 +13,6 @@ export default class BasicModal extends Component {
     this.setState({
       open: false
     });
-
-  componentWillUnmount() {
-    document.body.removeEventListener("click", this.listener);
-  }
 
   render() {
     return (
